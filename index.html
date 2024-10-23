@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Margarine&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="brand">Amna's Portfolio<b>.</b></div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#home">About</a></li> 
+                    <li><a href="#skills-section">Services</a></li> 
+                    <li><a href="#skills-section">Projects</a></li> 
+                    <li><a href="#Contact-Section">Contact Me</a></li> 
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="main-section">
+            <div class="intro">
+                <p>Hi, My name is <span class="purple"><i>Amna</i></span></p>
+                <p>I am a passionate <span id="element"></span></p>
+                <div class="buttons">
+                    <button class="btn"><a href="CV.pdf" download>Download Resume</a></button>
+                    <button class="btn"><a href="https://github.com/AmnaHub/Demo" target="_blank">Visit Github</a></button>
+                </div>
+            </div>
+            <div class="image">
+                <img src="pg.png" alt="Profile Picture of Amna">
+            </div>
+        </section>
+        <hr>
+
+        <!-- Skills Section  -->
+        <div id="skills-section" class="skills-section">
+            <h1>My Skills</h1>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <div class="skill-icon html5-icon"></div>
+                    <h3>HTML5</h3>
+                    <p>Proficient in creating semantic, responsive web pages with HTML5.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon css3-icon"></div>
+                    <h3>CSS3</h3>
+                    <p>Styling web pages with modern techniques.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon js-icon"></div>
+                    <h3>JavaScript</h3>
+                    <p>Adding interactivity to web pages.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon python-icon"></div>
+                    <h3>Python</h3>
+                    <p>Programming with Python for various applications.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon seo-icon"></div>
+                    <h3>SEO</h3>
+                    <p>Optimizing websites for search engines.</p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Contact Section -->
+        <div id = "Contact-Section" class="contact-container">
+            <div class="form-container">
+                <form id="contact-form" action="https://api.web3forms.com/submit" method="post"> 
+                    <input type="hidden" name="access_key" value="9440ac7d-129c-4033-8672-c7600ff2306e">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Share your thoughts" required></textarea>
+                    <button type="submit">SHARE YOUR FEEDBACK</button>
+                </form>
+            </div>
+            <div class="info-container">
+                <h1>Contact <span>Us</span></h1>
+                <p>It is very important for us to keep in touch with you, so we are always ready to answer any question that interests you. Shoot!</p>
+            </div>
+        </div>
+
+        <hr/>
+
+        <!-- Footer Section -->
+        <footer id="footer">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <h2>Your Portfolio</h2>
+                    <p>Creative Web Developer & Designer</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Me</h4>
+                    <div class="social-icons">
+                        <a href="#" class="icon facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="icon instagram"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#" class="icon twitter"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="#" class="icon linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Your @AmnaSiddiqui. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', {
+                strings: ['Web Developer<br>', 'Digital Marketer<br>'],
+                typeSpeed: 50,
+                backSpeed: 25,
+                loop: true
+            });
+        </script>
+</body>
+</html>
